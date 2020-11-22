@@ -1,0 +1,31 @@
+This is a short Python scripting exercise, and should be run with Python3. We will use the free OpenData API for a game called Dota 2. https://docs.opendota.com/#section/Introduction. The initial free tier (without an API key) should suffice.
+Start with the output of the PRO PLAYERS ('/proPlayers') endpoint, and query additional TeamID data as necessary ('/teams/{team_id}').
+
+For the purpose of this exercise, player "experience" will be defined as the amount of time that has passed since the start of a player's data history (start time is available as a player's "full_history_time").
+"Team experience" is the sum of all pro player's experience that are part of the same team (according to "team_id").
+
+Goal: Write a Python3 command line script that satisfies all of the following
+
+    Has three or more arguments:
+        1. The number of teams included in the output
+        2. Output file destination
+        3. Logging verbosity
+    Uses a Python logging module that logs directly to stderr.
+    For the top n teams (by "team_id"), sorted by team experience, output YAML with the following:
+        * Team Name
+        * Team ID
+        * Wins
+        * Losses
+        * Rating
+        * Team Experience
+        * For each Player:
+            * Personaname
+            * Player Experience
+            * Country Code
+
+Additional notes and guidelines:
+* We've provided a sample argument parser to speed things up. You may also edit it or write your own.
+* Feel free to use open-source packages. Declare dependencies in any conventional format.
+* There will be some inconsistencies and missing data in the API’s responses. If the missing data compromises the team experience calculations, exclude the offending teams or players. Otherwise, simply ignore the missing fields.
+* When making design decisions for issues not acknowledged in this prompt, use your best judgement and explain your reasoning in comments and docstrings.
+* Apple does not run the OpenDOTA service or control its content, so API responses might include offensive language. Please contact us if you have a concern.
