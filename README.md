@@ -1,6 +1,6 @@
 # Dota 2 Top Teams Tool
 
-[![Build Status](https://travis-ci.com/fosdickio/opendota-api-tool.svg?branch=master)](https://travis-ci.com/fosdickio/opendota-api-tool)
+[![Build Status](https://travis-ci.com/fosdickio/opendota-api-tool.svg?branch=main)](https://travis-ci.com/fosdickio/opendota-api-tool)
 
 This repository contains a tool and API wrapper for interacting with the [OpenDota API](https://docs.opendota.com/#section/Introduction).  The API is responsible for serving content related to the game [Dota 2](http://www.dota2.com/play/).  The API itself is free to use without an API key, but is limited to 50,000 free calls per month and 60 requests/minute.
 
