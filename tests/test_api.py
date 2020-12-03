@@ -27,7 +27,7 @@ class ProPlayersTests(unittest.TestCase):
         """
         account_id = 88470
         steam_id = '76561197960354198'
-        personaname = 'Tzy丶'
+        personaname = 'Magma.Tzy丶'
         name = 'Tzy丶'
         country_code = 'cn'
 
